@@ -2,3 +2,4 @@ FROM php:fpm
 
 WORKDIR /app
 COPY index.php /app/
+RUN docker-php-ext-install mysqli
